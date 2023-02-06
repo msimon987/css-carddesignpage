@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        line-height: 150px;
+    }
+    #container {
+        top: 25px;
+        left: 25px;
+        position: absolute;
+    }
+    .group {
+        display: inline-block;
+        width: 200px;
+        height: 150px;
+    }
+    .original, .transformed {
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+        color: white;
+        text-align: center;
+        background-color: black;
+        position: absolute;
+    }
+    .transformed {
+        background-color: tomato;
+        opacity: 0.8;
+    }
+    #transformed-1 {transform: rotate(45deg);}
+    #transformed-2 {transform: rotate(1.2rad);}
+    #transformed-3 {transform: rotate(0.25turn);}
+</style>
+<body>
+    <div id="container">
+        <div class="group">
+            <div class="original">Original</div>
+            <div class="transformed" id="transformed-1">Transformed</div>
+        </div>
+        <div class="group">
+            <div class="original">Original</div>
+            <div class="transformed" id="transformed-2">Transformed</div>
+        </div>
+        <div class="group">
+            <div class="original">Original</div>
+            <div class="transformed" id="transformed-3">Transformed</div>
+        </div>
+    </div>
+</body>
+</html>
